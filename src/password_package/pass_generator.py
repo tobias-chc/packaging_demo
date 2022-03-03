@@ -3,7 +3,7 @@ import math
 import string
 
 
-def get_password_len_input(min_length = 6, max_length = 15):
+def get_password_length_input(min_length = 6, max_length = 15):
     """
     Get the password length from the user , it needs to be a integer between
     min_length and max_length, this length includes all the characters
@@ -73,7 +73,7 @@ def create_password():
         str: Password generated.
     """
 
-    pass_length = get_password_len_input()
+    pass_length = get_password_length_input()
 
     if pass_length is not None:
         # length of password by 50-30-20 formula
@@ -101,13 +101,7 @@ def create_password():
         # convert List To string
         gen_password = ''.join(password)
 
-        print(gen_password)
-
         return gen_password
 
     else:
         pass
-
-
-
-create_password()
